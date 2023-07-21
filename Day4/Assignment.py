@@ -1,28 +1,24 @@
 
-
-
-print("/////================================ Enter Your Marks to get your Grade ==========================================//////\n\n")
-
-print("Marks :- ")
+print("==================== Enter Your Marks to get your Grade ====================")
 
 # Input from User
-inputMarks = int(input())
+input_marks = float(input("Enter Marks in Number :- "))
 
 # Invalid Inputs
-if inputMarks < 0 and inputMarks >100:
+if 0 > input_marks > 100:
     print("Invalid Marks")
 
-elif inputMarks >= 0 and inputMarks < 60:
+elif 0 <= input_marks < 60:
     print(":( You Failed with Grade 'F' ): ")
 
-elif inputMarks >= 60 and inputMarks < 70:
+elif 60 <= input_marks < 70:
     print("You Passed with Grade 'D' ")
 
-elif inputMarks >= 70 and inputMarks < 80:
+elif 70 <= input_marks < 80:
     print("You Passed with Grade 'C' ")
 
-elif inputMarks >= 80 and inputMarks < 90:
+elif 80 <= input_marks < 90:
     print(":) Congratulation You Passed with Grade 'B' (:")
 
-elif inputMarks >= 90 and inputMarks <= 100:
-    print(" `````~~~~~~~~~~~~~ Excellent performance You Passed with Grade 'A'  ~~~~~~~~~~~~~~~~``````")
+elif 90 <= input_marks <= 100:
+    print(" `````~~~~~~~~~ Excellent performance You Passed with Grade 'A'  ~~~~~~~~~``````")
