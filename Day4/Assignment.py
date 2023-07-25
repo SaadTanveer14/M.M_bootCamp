@@ -5,7 +5,7 @@ print("==================== Enter Your Marks to get your Grade =================
 input_marks = float(input("Enter Marks in Number :- "))
 
 # Invalid Inputs
-if 0 > input_marks > 100:
+if input_marks < 0 or input_marks > 100:
     print("Invalid Marks")
 
 elif 0 <= input_marks < 60:
