@@ -1,4 +1,11 @@
-sample_text = """saad tanveer"""
+sample_text = """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at magna libero. Pellentesque
+habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin dictum, odio eget
+consectetur lacinia, mi dui semper odio, in posuere tellus elit eget enim. Donec lacinia orci id purus
+fringilla fringilla. Nullam in sapien quis ex facilisis euismod. Nunc condimentum lacinia nisl, sit amet
+vestibulum libero convallis ac. Nam bibendum tellus at massa elementum varius. Vivamus consequat,
+elit nec vestibulum iaculis, velit urna mattis arcu, nec rutrum orci turpis vel urna. Ut tempor nunc at orci
+facilisis fringilla. Nulla facilisi. Duis sagittis, odio et pharetra rhoncus, nulla justo tincidunt mauris, nec
+porttitor tortor justo non orci. In hac habitasse platea dictumst."""
 
 
 # Punctuation and Special Characters Missing period so that we can seperate sentences
@@ -56,7 +63,7 @@ words = cleaned_text_final.split()
 # Finding Longest Word
 for word in words: 
     if len(word) > len(longest_word):
-        longestWord = word
+        longest_word = word
 
 
 
@@ -68,7 +75,7 @@ print("First Sentence:",'"' + first_sentence + '"')
 print("Last Sentence:",'"' + second_sentence + '"')
 
 # Printing Longest Word
-print("Longest Word: \"", longestWord+"\"", "(Length:"+str(len(longest_word))+")")
+print("Longest Word: \"", longest_word+"\"", "(Length:"+str(len(longest_word))+")")
 
 # Printing Space Count
 print("Space Count: ", space_count)
