@@ -1,0 +1,3 @@
+The request could not be processed because an error occurred whilst attempting to evaluate the SQL statement associated with this resource.
+Please check the SQL statement is correctly formed and executes without error.
+SQL Error Code: 17004, Error Message: Invalid column type
